@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Social Command Center</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style id="lgcss">
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%;background:#fbf7f4;color:#50223e;font:16px/1.55 'DM Sans',system-ui,sans-serif}
+#lg{min-height:100vh;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr)}
+#lg .art{background:#50223e;color:#fdeeff;margin:14px;border-radius:30px;padding:clamp(28px,5vw,56px);display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
+#lg .art::before,#lg .art::after{content:"";position:absolute;border-radius:50%;background:rgba(253,238,255,.07)}
+#lg .art::before{width:420px;height:420px;right:-140px;top:-120px}
+#lg .art::after{width:260px;height:260px;left:-90px;bottom:-80px}
+#lg .art>*{position:relative}
+#lg h1{font-family:'Fraunces',Georgia,serif;font-weight:400;font-size:clamp(34px,4.4vw,54px);line-height:1.04;margin:22px 0 12px;text-wrap:balance}
+#lg .brandrow{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+#lg .brandrow .lm{height:96px;width:auto}#lg .brandrow .lc{height:46px;width:auto}
+#lg .brandrow i{width:1px;height:60px;background:rgba(253,238,255,.3)}
+#lg .cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:28px;max-width:520px}
+#lg .cards div{border-radius:18px;padding:14px;color:#50223e}
+#lg .cards b{font-family:'Fraunces',Georgia,serif;font-weight:400;font-size:24px;display:block}
+#lg .cards span{font-size:12px}
+#lg .side{display:flex;align-items:center;justify-content:center;padding:28px 18px}
+#lg form{width:100%;max-width:400px}
+#lg .logos{display:flex;align-items:center;gap:14px;margin-bottom:26px}
+#lg .logos .lm{height:62px;width:auto}#lg .logos .lc{height:30px;width:auto}
+#lg .logos i{width:1px;height:34px;background:rgba(80,34,62,.18)}
+#lg h2{font-family:'Fraunces',Georgia,serif;font-weight:400;font-size:30px;margin:0 0 6px}
+#lg p{margin:0 0 22px;color:#86677a}
+#lg label{display:block;font-size:14px;margin:14px 0 6px}
+#lg input[type=email],#lg input[type=password],#lg input[type=text]{width:100%;min-height:50px;border:1px solid rgba(80,34,62,.16);border-radius:16px;padding:12px 16px;font:inherit;font-size:16px;color:#50223e;background:#fff}
+#lg input:focus{outline:2px solid #50223e;outline-offset:1px}
+#lg .pw{position:relative}#lg .pw button{position:absolute;right:8px;top:8px;height:34px;border:0;background:#f4ebe6;border-radius:12px;padding:0 12px;cursor:pointer;font:inherit;font-size:13px;color:#50223e}
+#lg .keep{display:flex;gap:10px;align-items:center;margin:16px 0 20px;font-size:14px;color:#86677a}
+#lg .keep input{width:18px;height:18px;accent-color:#50223e}
+#lg .go{width:100%;min-height:52px;border:0;border-radius:999px;background:#50223e;color:#fdeeff;font:inherit;font-size:16px;font-weight:500;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px}
+#lg .go[disabled]{opacity:.7;cursor:default}
+#lg .err{min-height:24px;margin-top:12px;color:#a5423c;font-size:14px}
+#lg .fine{font-size:12px;color:#86677a;margin-top:22px;line-height:1.5}
+#lg .sp{width:16px;height:16px;border:2px solid rgba(253,238,255,.4);border-top-color:#fdeeff;border-radius:50%;animation:sp 1s linear infinite;display:none}
+@keyframes sp{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:no-preference){#lg .side form{animation:in .6s cubic-bezier(.2,.7,.2,1) both}@keyframes in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}}
+@media (max-width:820px){#lg{grid-template-columns:minmax(0,1fr)}#lg .art{min-height:auto}#lg .cards{display:none}}
+</style>
+</head>
+<body>
+<div id="lg">
+  <section class="art" aria-hidden="true">
+    <div class="brandrow"><img class="lm" src="mrg-light.png" alt="Maria Rocha Realtor"><i></i><img class="lc" src="micasa-light.png" alt="Mi Casa, Iowa"></div>
+    <div>
+      <h1>Social Command Center</h1>
+      <div style="opacity:.8;max-width:440px">Stats, trending topics and your content plan for TikTok, Instagram and Facebook, refreshed every morning at 5:00 AM.</div>
+      <div class="cards"><div style="background:#fdeeff"><b>Stats</b><span>Every platform</span></div><div style="background:#f4ebe6"><b>Trends</b><span>Your niche, weekly</span></div><div style="background:#d0c0b1"><b>Plan</b><span>Ideas to calendar</span></div></div>
+    </div>
+    <div style="opacity:.6;font-size:13px">Private team dashboard</div>
+  </section>
+  <section class="side">
+    <form id="lf" novalidate>
+      <div class="logos"><img class="lm" src="mrg-dark.png" alt="Maria Rocha Realtor"><i></i><img class="lc" src="micasa-dark.png" alt="Mi Casa, Iowa"></div>
+      <h2>Welcome back</h2>
+      <p>Sign in with the team login to open the dashboard.</p>
+      <label for="em">Email</label>
+      <input type="email" id="em" autocomplete="username" placeholder="marketing@mariarochagroup.com" required>
+      <label for="pw">Password</label>
+      <div class="pw"><input type="password" id="pw" autocomplete="current-password" required><button type="button" id="sh" aria-label="Show password">Show</button></div>
+      <label class="keep"><input type="checkbox" id="kp"> Keep me signed in on this device</label>
+      <button class="go" id="go" type="submit"><span class="sp" id="sp"></span><span id="gl">Sign in</span></button>
+      <div class="err" id="er" role="alert"></div>
+      <div class="fine">Everything on this site is encrypted. Only team members with a login can open it. Need the password? Ask the marketing team.</div>
+    </form>
+  </section>
+</div>
+<script>
+{
+const $=s=>document.querySelector(s);
+const ub=s=>Uint8Array.from(atob(s),c=>c.charCodeAt(0));
+const bb=b=>btoa(String.fromCharCode(...new Uint8Array(b)));
+const te=new TextEncoder(),td=new TextDecoder();
+const store={get(){try{return sessionStorage.getItem('scc-k')||localStorage.getItem('scc-k')}catch(e){return null}},set(v,keep){try{(keep?localStorage:sessionStorage).setItem('scc-k',v)}catch(e){}},clear(){try{sessionStorage.removeItem('scc-k');localStorage.removeItem('scc-k')}catch(e){}}};
+const getJSON=p=>fetch(p,{cache:'no-store'}).then(r=>{if(!r.ok)throw new Error('load');return r.json()});
+async function hashEmail(e){const h=await crypto.subtle.digest('SHA-256',te.encode('scc:'+e.trim().toLowerCase()));return [...new Uint8Array(h)].map(x=>x.toString(16).padStart(2,'0')).join('')}
+async function unwrap(vault,email,pw){const h=await hashEmail(email);const u=vault.users.find(x=>x.h===h);if(!u)throw new Error('auth');
+const base=await crypto.subtle.importKey('raw',te.encode(pw),'PBKDF2',false,['deriveKey']);
+const k=await crypto.subtle.deriveKey({name:'PBKDF2',salt:ub(u.s),iterations:vault.iter||600000,hash:'SHA-256'},base,{name:'AES-GCM',length:256},false,['decrypt']);
+try{return await crypto.subtle.decrypt({name:'AES-GCM',iv:ub(u.iv)},k,ub(u.wk))}catch(e){throw new Error('auth')}}
+const priv=der=>crypto.subtle.importKey('pkcs8',der,{name:'RSA-OAEP',hash:'SHA-256'},false,['decrypt']);
+async function openBox(pk,box){const raw=await crypto.subtle.decrypt({name:'RSA-OAEP'},pk,ub(box.ek));const ak=await crypto.subtle.importKey('raw',raw,'AES-GCM',false,['decrypt']);return JSON.parse(td.decode(await crypto.subtle.decrypt({name:'AES-GCM',iv:ub(box.iv)},ak,ub(box.ct))))}
+async function launch(der){const pk=await priv(der);const [appBox,dataBox]=await Promise.all([getJSON('app.enc.json'),getJSON('data.enc.json')]);const [app,data]=await Promise.all([openBox(pk,appBox),openBox(pk,dataBox)]);
+const st=document.createElement('style');st.textContent=app.css;document.head.appendChild(st);document.getElementById('lgcss').remove();
+document.body.innerHTML=app.html;window.__SCC_STANDALONE=true;window.__SCC_DATA=data;const s=document.createElement('script');s.textContent=app.js;document.body.appendChild(s)}
+const busy=on=>{$('#go').disabled=on;$('#sp').style.display=on?'inline-block':'none';$('#gl').textContent=on?'Unlocking…':'Sign in'};
+$('#sh').onclick=()=>{const p=$('#pw');const v=p.type==='password';p.type=v?'text':'password';$('#sh').textContent=v?'Hide':'Show';$('#sh').setAttribute('aria-label',v?'Hide password':'Show password')};
+['em','pw'].forEach(id=>$('#'+id).addEventListener('input',()=>{$('#er').textContent=''}));
+$('#lf').addEventListener('submit',async e=>{e.preventDefault();const em=$('#em').value.trim(),pw=$('#pw').value;
+if(!em||!pw){$('#er').textContent='Enter your email and password.';return}
+if(!window.crypto||!crypto.subtle){$('#er').textContent='This browser can\'t open the dashboard. Try Chrome, Safari or Edge.';return}
+busy(true);try{const vault=await getJSON('vault.json');const der=await unwrap(vault,em,pw);store.set(bb(der),$('#kp').checked);await launch(der)}
+catch(err){busy(false);store.clear();$('#er').textContent=err.message==='auth'?"That email and password don't match. Try again.":"The dashboard couldn't load. Check your connection and try again."}});
+const saved=store.get();if(saved){busy(true);launch(ub(saved)).catch(()=>{store.clear();busy(false)})}
+}
+</script>
+</body>
+</html>
